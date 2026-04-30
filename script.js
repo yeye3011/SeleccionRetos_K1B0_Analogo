@@ -41,7 +41,7 @@ document.querySelectorAll('.level-card').forEach((card) => {
     card.classList.remove('has-image');
 
     const message = card.querySelector('.placeholder p');
-    message.textContent = 'Click Challenge to begin';
+    message.textContent = 'Tu reto es...';
   });
 
   image.addEventListener('error', () => {
