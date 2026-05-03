@@ -12,7 +12,7 @@ body {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #f5f3e8 0%, #e8ede5 50%, #dde5d5 100%);
+  background: linear-gradient(90deg, #5bb6b7 0%, #7cd2d3 100%);
   color: #ffffff;
 }
 
@@ -54,8 +54,8 @@ select {
   justify-items: center;
   text-align: center;
   padding: clamp(14px, 2vw, 32px);
-  background: linear-gradient(180deg, #f0f4ed 0%, #e3ebe0 100%);
-  border: clamp(1px, 0.25vw, 2px) solid #c4d3be;
+  background: linear-gradient(180deg, #e6f7f7 0%, #d4f1f1 100%);
+  border: 2px solid #a6e4e5;
   border-radius: clamp(16px, 2vw, 24px);
   box-shadow: 0 12px 26px rgba(64, 87, 58, 0.16);
 }
@@ -73,7 +73,7 @@ select {
   position: absolute;
   width: clamp(28px, 3.2vw, 44px);
   height: clamp(28px, 3.2vw, 44px);
-  background: #a8c69f;
+  background: #9fc6c5;
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   opacity: 0.14;
 }
@@ -81,13 +81,13 @@ select {
 .level-card::before {
   top: 9%;
   right: 6%;
-  background: #8fbc8f;
+  background: #8fbcba;
 }
 
 .level-card::after {
   bottom: 7%;
   left: 7%;
-  background: #b4c7af;
+  background: #afc4c7;
 }
 
 .level-header {
@@ -96,8 +96,8 @@ select {
   width: min(100%, 280px);
   margin-bottom: clamp(10px, 2vh, 22px);
   padding: clamp(10px, 1.3vw, 16px) clamp(14px, 2.4vw, 30px);
-  background: linear-gradient(90deg, #7da87b 0%, #a8c69f 100%);
-  border: clamp(2px, 0.35vw, 3px) solid #b4c7af;
+  background: linear-gradient(90deg, #7ba8a7 0%, #9fc6c5 100%);
+  border: clamp(2px, 0.35vw, 3px) solid #afc4c7;
   border-radius: clamp(14px, 1.6vw, 18px);
   box-shadow: 0 10px 18px rgba(64, 87, 58, 0.2);
 }
@@ -133,13 +133,13 @@ select {
 .leaf::before {
   top: 0;
   left: 25%;
-  background: #a8c69f;
+  background: #9fc6c5;
 }
 
 .leaf::after {
   bottom: 2px;
   left: 8%;
-  background: #8fbc8f;
+  background: #8fbcba;
   transform: rotate(-30deg);
 }
 
@@ -163,8 +163,8 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.8);
-  border: clamp(2px, 0.45vw, 4px) solid #b4c7af;
+  background: #ffffff;
+  border: clamp(2px, 0.45vw, 4px) solid #afc4c7;
   border-radius: clamp(18px, 2vw, 28px);
   box-shadow: 0 12px 26px rgba(64, 87, 58, 0.2);
 }
@@ -181,7 +181,7 @@ select {
 
 .placeholder p {
   margin: 0;
-  color: #7da87b;
+  color: #7ba8a7;
   font-size: clamp(0.9rem, 1.3vw, 1.15rem);
   font-weight: 700;
 }
@@ -201,55 +201,31 @@ select {
   display: block;
 }
 
-.tree-icon {
-  position: relative;
-  width: clamp(54px, 7vw, 84px);
-  height: clamp(54px, 7vw, 84px);
-  opacity: 0.45;
-}
-
-.tree-icon::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 33%;
-  width: 14%;
-  height: 40%;
-  transform: translateX(-50%);
-  background: #8fbc8f;
-}
-
-.tree-icon::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(#a8c69f, #a8c69f) 50% 8% / 38px 28px no-repeat,
-    linear-gradient(#7da87b, #7da87b) 50% 56% / 64px 34px no-repeat,
-    linear-gradient(#b4c7af, #b4c7af) 24% 82% / 24px 20px no-repeat,
-    linear-gradient(#b4c7af, #b4c7af) 76% 82% / 24px 20px no-repeat;
-  clip-path: polygon(50% 0, 70% 32%, 59% 32%, 83% 72%, 64% 72%, 50% 100%, 36% 72%, 17% 72%, 41% 32%, 30% 32%);
+.character-icon {
+  width: clamp(60px, 8vw, 100px);
+  height: auto;
+  opacity: 0.8;
 }
 
 .challenge-button {
   position: relative;
   z-index: 2;
   margin-top: clamp(10px, 2vh, 22px);
-  border: clamp(2px, 0.35vw, 3px) solid #b4c7af;
+  border: clamp(2px, 0.35vw, 3px) solid #afc4c7;
   border-radius: clamp(14px, 1.6vw, 18px);
   padding: clamp(10px, 1.4vw, 16px) clamp(24px, 3vw, 44px);
   cursor: pointer;
   color: #ffffff;
   font-size: clamp(1rem, 1.6vw, 1.25rem);
   font-weight: 800;
-  background: linear-gradient(90deg, #7da87b 0%, #8fbc8f 100%);
+  background: linear-gradient(90deg, #5bb6b7 0%, #7cd2d3 100%);
   box-shadow: 0 12px 24px rgba(64, 87, 58, 0.22);
   transition: transform 180ms ease, filter 180ms ease, box-shadow 180ms ease;
 }
 
 .challenge-button:hover {
   transform: scale(1.04);
-  filter: brightness(0.95);
+  filter: brightness(1.1);
 }
 
 .challenge-button:active {
@@ -268,7 +244,7 @@ select {
   position: absolute;
   width: 4px;
   height: 70px;
-  background: #7da87b;
+  background: #7ba8a7;
   border-radius: 999px;
 }
 
@@ -278,10 +254,10 @@ select {
   width: 80px;
   height: 80px;
   background:
-    linear-gradient(#7da87b, #7da87b) 45% 38% / 38px 3px no-repeat,
-    linear-gradient(#7da87b, #7da87b) 58% 52% / 42px 3px no-repeat,
-    linear-gradient(#a8c69f, #a8c69f) 22% 35% / 16px 16px no-repeat,
-    linear-gradient(#8fbc8f, #8fbc8f) 78% 52% / 16px 16px no-repeat;
+    linear-gradient(#7ba8a7, #7ba8a7) 45% 38% / 38px 3px no-repeat,
+    linear-gradient(#7ba8a7, #7ba8a7) 58% 52% / 42px 3px no-repeat,
+    linear-gradient(#9fc6c5, #9fc6c5) 22% 35% / 16px 16px no-repeat,
+    linear-gradient(#8fbcba, #8fbcba) 78% 52% / 16px 16px no-repeat;
   transform: rotate(25deg);
 }
 
@@ -320,7 +296,7 @@ select {
 .corner-decoration::before {
   width: 54%;
   height: 54%;
-  background: #a8c69f;
+  background: #9fc6c5;
 }
 
 .corner-decoration::after {
@@ -328,17 +304,17 @@ select {
   bottom: 0;
   width: 48%;
   height: 48%;
-  background: #8fbc8f;
+  background: #8fbcba;
 }
 
 .reset-button {
   position: relative;
   z-index: 2;
-  border: 2px solid #b4c7af;
+  border: 2px solid #afc4c7;
   border-radius: 14px;
   padding: 8px 22px;
   cursor: pointer;
-  color: #7da87b;
+  color: #7ba8a7;
   font-size: 0.9rem;
   font-weight: 700;
   background: #ffffff;
